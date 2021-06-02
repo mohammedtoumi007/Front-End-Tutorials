@@ -1,0 +1,43 @@
+/*
+    Css Position : [Static | Relative | Absolute | Fixed]
+    Directions : [Top | Left | Bottom | Right]
+*/
+body{
+    width: 3000px;
+    height: 3000px;
+}
+.content{
+    width: 800px;
+    margin: 20px auto;
+    background-color: #00F;
+    padding: 10px;
+}
+.content > div{
+    background-color: #080;
+    color: #FFF;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.content > div:last-child{
+    margin-bottom: 0;
+}
+.relative{
+    background-color: #F00 !important;
+    position: relative;
+    left: 10px;
+}
+.absolute{
+    background-color: #F00 !important;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.fixed{
+    background-color: #F00 !important;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+.fixed:hover{
+    position: static;
+}

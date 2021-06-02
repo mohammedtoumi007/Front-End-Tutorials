@@ -1,0 +1,27 @@
+body{
+    counter-reset: main-counter one-counter 4;
+
+
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+ul li::before{
+    counter-increment: main-counter 2; /* increment by 2 */
+    content: "ID" counter(main-counter);
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    background-color: #F00;
+    color: #FFF;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.test div::before{
+    counter-increment: one-counter; 
+    content: counter(one-counter);
+}

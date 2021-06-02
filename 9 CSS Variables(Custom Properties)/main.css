@@ -1,0 +1,22 @@
+/*
+    var(Custom property, fallBack value)
+*/
+:root{
+    --my-main-color: #080;
+    --alt-color: #00F;
+}
+body{
+
+}
+p{
+    font-size: 30px;
+    color: var(--alt-color);
+}
+div{
+    font-size: 20px;
+    color: var(--my-main-color);
+    --variable-color: rgb(201, 26, 26);
+}
+div span{
+    color: var(--variable-color);
+}

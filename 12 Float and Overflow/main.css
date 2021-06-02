@@ -1,0 +1,20 @@
+div{
+    color: #FFF;
+}
+.parent{
+    background-color: #F00;
+    min-height: 20px;
+}
+.parent::after{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    clear: both;
+    height: 0;
+}
+.child{
+    background-color: #00F;
+    margin-bottom: 5px;
+    float: left;
+    width: 50%;
+}
