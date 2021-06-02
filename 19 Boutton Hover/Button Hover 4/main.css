@@ -1,0 +1,40 @@
+body{
+    background-color: #222;
+    margin: 0;
+    display: flex;
+    font-family: sans-serif;
+    height: 100vh;
+}
+*{
+    box-sizing: border-box;
+}
+.button{
+    padding: 15px 60px;
+    display: inline-block;
+    color: orange;
+    border: 2px solid orange;
+    margin: auto;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+    transition: color .8s ease;
+}
+.button::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: orange;
+    width: 0;
+    transition: all .8s ease;
+    z-index: -1;
+}
+.button:hover::before{
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+.button:hover{
+    color: black;
+}
